@@ -1,0 +1,38 @@
+:root {
+    --border: rgba(255, 255, 255, 0.3);
+    --gap: 10px;
+}
+
+@font-face {
+    font-family: 'dejavu';
+    src: url(../font/bpg_dejavu_sans.ttf);
+}
+
+body {
+    font-family: 'dejavu';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+#root {
+    display: flex;
+    gap: var(--gap);
+}
+
+.per {
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    padding: var(--gap) calc(var(--gap) * 2);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+}
